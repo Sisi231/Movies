@@ -1,0 +1,35 @@
+﻿<Window x:Class="Movies.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="LogIn" Height="500" Width="250">
+    <Grid>
+        <Border CornerRadius="20" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FFFFB9B9" />
+                        <GradientStop Offset="1" Color="#FF8E1A00" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="H:\Programming\Potato.jpg"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Log In" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
+                <Label Content="Username" Foreground="#FFFCCDCD" FontSize="16" HorizontalAlignment="Center" Margin="71,15,71.333,0"/>
+                <TextBox x:Name="txtUsername" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Margin="10,10,10.333,0"/>
+                <Label Content="Password" Foreground="#FFFFB9B9" FontSize="16" HorizontalAlignment="Center" Margin="74,15,73.333,0"/>
+                <PasswordBox x:Name="PasswordBox" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Margin="10,0,10.333,0"/>
+                <Button x:Name="Submit" Content="Submit" Margin="60,30,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
