@@ -20,22 +20,22 @@
                 <StackPanel>
                 <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" >
                     <Button.Background>
-                         <ImageBrush ImageSource="H:\Programming\Potato.jpg"/>
+                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>
                 </Button>
-                <Label Content="Sign Up" Foreground="#FF8E1A00" FontSize="18" HorizontalAlignment="Center" Margin="75,-45,75.333,0" Height="36"/>
+                    <Label Content="Sign Up" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="18" HorizontalAlignment="Center" Margin="75,-45,75.333,0" Height="36" Width="80"/>
                 </StackPanel>
-                <Label Content="First Name" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="78,5,78.333,0"/>
+                <Label Content="First Name" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="78,5,78.333,0" Width="75"/>
                 <TextBox x:Name="txtFirstName" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="18"/>
-                <Label Content="Last Name" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="79,5,78.333,0"/>
+                <Label Content="Last Name" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="79,5,78.333,0" Width="75"/>
                 <TextBox x:Name="txtLastName" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
-                <Label Content="Email" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="93,5,92.333,0"/>
+                <Label Content="Email" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" HorizontalAlignment="Center" Margin="93,5,92.333,0" Width="75"/>
                 <TextBox x:Name="txtEmail" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="18"/>
-                <Label Content="Username" Foreground="#FFFFB7B7" HorizontalAlignment="Center" Margin="80,5,80.333,0"/>
+                <Label Content="Username" HorizontalContentAlignment="Center" Foreground="#FFFFB7B7" HorizontalAlignment="Center" Margin="80,5,80.333,0" Width="75"/>
                 <TextBox x:Name="txtUsername" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
-                <Label Content="Password" Foreground="#FFFFB9B9" HorizontalAlignment="Center" Margin="82,5,82.333,0"/>
+                <Label Content="Password" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" HorizontalAlignment="Center" Margin="82,5,82.333,0" Width="75" />
                 <PasswordBox x:Name="PasswordBox" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="20"/>
-                <Label Content="Repeat Password" Foreground="#FFFFB9B9" HorizontalAlignment="Center" Margin="62,5,62.333,0"/>
+                <Label Content="Repeat Password" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" HorizontalAlignment="Center" Margin="62,5,62.333,0" Width="100"/>
                 <PasswordBox x:Name="RePasswordBox" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,10.333,0" Height="19"/>
                 <Button x:Name="Submit_1" Content="Submit" Margin="60,20,60.333,90" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click" />
             </StackPanel>

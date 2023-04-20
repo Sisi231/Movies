@@ -20,7 +20,7 @@
                 <Label Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="19,20,10.333,0" Width="150">
                     <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Text="Welcome to Rotten Potatoes" TextWrapping="WrapWithOverflow" Width="150"/>
                 </Label>
-                <Image Source="H:\Programming\Potato.jpg" Height="116" Width="117" HorizontalAlignment="Center" Margin="0,16,0,0" RenderTransformOrigin="0.5,0.5"/>
+                <Image Source="C:\Sisi\Potato.jpg" Height="116" Width="117" HorizontalAlignment="Center" Margin="0,16,0,0" RenderTransformOrigin="0.5,0.5"/>
                 <Border CornerRadius="20" Margin="53,30,58.333,20" Background="White" Height="32">
                     <Button x:Name="Submit_2" Content="Sing Up" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click1" BorderBrush="White"/>
                 </Border>

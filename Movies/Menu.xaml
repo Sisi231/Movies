@@ -1,0 +1,38 @@
+﻿<Window x:Class="Movies.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="Menu" Height="500" Width="250">
+    <Grid>
+        <Border CornerRadius="20" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FFFFB9B9" />
+                        <GradientStop Offset="1" Color="#FF8E1A00" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <Image Source="C:\Sisi\Potato.jpg" Height="45" Width="45" Margin="-160,7,0,0" RenderTransformOrigin="0.5,0.5"/>
+                <Label Content="Menu" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
+                <Border CornerRadius="20" Margin="53,30,58.333,20" Background="White" Height="32">
+                    <Button x:Name="Submit_1" Content="Settings" Margin="19,0,18,0" Background="White"  FontSize="18" Click="Submit_Click1" BorderBrush="White"/>
+                </Border>
+                <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
+                    <Button x:Name="Submit_2" Content="My List" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click2" BorderBrush="White"/>
+                </Border>
+                <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
+                    <Button x:Name="Submit_3" Content="Movies" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click3" BorderBrush="White" Height="32" VerticalAlignment="Bottom"/>
+                </Border>
+                <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
+                    <Button x:Name="Submit_4" Content="Actors" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click4" BorderBrush="White" Height="32" VerticalAlignment="Top"/>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

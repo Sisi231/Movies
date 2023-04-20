@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Account.xaml.cs">
+      <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="OpeningWindow.xaml.cs">
       <DependentUpon>OpeningWindow.xaml</DependentUpon>
@@ -64,6 +70,10 @@
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
+    <Page Include="Account.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,6 +90,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OpeningWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,11 +1,11 @@
-﻿<Window x:Class="Movies.LogIn"
+﻿<Window x:Class="Movies.Account"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Movies"
         mc:Ignorable="d"
-        Title="LogIn" Height="500" Width="250">
+        Title="Account" Height="500" Width="250">
     <Grid>
         <Border CornerRadius="20" Margin="10">
             <Border.Background>
@@ -23,12 +23,11 @@
                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>
                 </Button>
-                <Label Content="Log In" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
+                <Label Content="Setting" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
                 <Label Content="Username" HorizontalContentAlignment="Center" Foreground="#FFFCCDCD" FontSize="16" HorizontalAlignment="Center" Margin="71,15,71.333,0" Width="85"/>
                 <TextBox x:Name="txtUsername" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Margin="10,10,10.333,0"/>
                 <Label Content="Password" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="16" HorizontalAlignment="Center" Margin="74,15,73.333,0" Width="85"/>
                 <PasswordBox x:Name="PasswordBox" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Margin="10,0,10.333,0"/>
-                <Button x:Name="Submit" Content="Submit" Margin="60,30,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
             </StackPanel>
         </Border>
     </Grid>
