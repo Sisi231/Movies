@@ -20,7 +20,7 @@
             <StackPanel>
                 <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" >
                     <Button.Background>
-                        <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
+                        <ImageBrush ImageSource="H:\Programming\Potato.jpg"/>
                     </Button.Background>
                 </Button>
                 <Label Content="Log In" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />

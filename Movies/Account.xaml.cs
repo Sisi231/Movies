@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Data;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -25,8 +27,43 @@ namespace Movies
             InitializeComponent();
             username = AccountHolder;
         }
+        void fill_Data()
+        {
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=StudentRecords; Integrated Security=True");
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                string query = $"SELECT * FROM SignUpTable Where Username = '{username}'";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                SqlDataReader dr = sqlCmd.ExecuteReader();
+                dr.Read();
+                txtUsername.Text = dr.GetString(1);
+                txtEmail.Text = dr.GetString(2);
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+        }
         private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Menu OpenMenu = new Menu(username);
+            OpenMenu.Show();
+            this.Close();
+        }
+
+        private void Submit_Click2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Submit_Click1(object sender, RoutedEventArgs e)
         {
             Menu OpenMenu = new Menu(username);
             OpenMenu.Show();
