@@ -40,10 +40,17 @@ namespace Movies
 
         private void Submit_Click3(object sender, RoutedEventArgs e)
         {
-
+            SearchMovieByGenre OpenSearchGenre = new SearchMovieByGenre(username);
+            OpenSearchGenre.Show();
+            this.Close();
         }
 
         private void Submit_Click4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Submit_Click5(object sender, RoutedEventArgs e)
         {
 
         }

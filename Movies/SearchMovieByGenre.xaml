@@ -1,0 +1,36 @@
+﻿<Window x:Class="Movies.SearchMovieByGenre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="SearchMovieByGenre" Height="500" Width="250">
+
+    <Grid>
+        <Border CornerRadius="20" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FFFFB9B9" />
+                        <GradientStop Offset="1" Color="#FF8E1A00" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" RenderTransformOrigin="0.5,0.502" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Pick Genres" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="0,15,0,0" Width="179"/>
+                <ComboBox x:Name="comboBox" HorizontalAlignment="Center" Width="200" Margin="0,20,0,0" FontSize="14" Background="#FFFCCDCD" Foreground="#FF8E1A00" SelectionChanged="comboBox_SelectionChanged_1"/>
+                <ComboBox x:Name="comboBox1" HorizontalAlignment="Center" Width="200" Margin="0,10,0,0" FontSize="14" Background="#FFFCCDCD" Foreground="#FF8E1A00" SelectionChanged="comboBox_SelectionChanged_2"/>
+                <ComboBox x:Name="comboBox2" HorizontalAlignment="Center" Width="200" Margin="0,10,0,0" FontSize="14" Background="#FFFCCDCD" Foreground="#FF8E1A00" SelectionChanged="comboBox_SelectionChanged_3"/>
+                <Button x:Name="Submit" Content="Submit" Margin="60,20,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="Movies.ChooseMovie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="ChooseMovie" Height="500" Width="250">
+    <Grid>
+        <Border CornerRadius="20" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FFFFB9B9" />
+                        <GradientStop Offset="1" Color="#FF8E1A00" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" RenderTransformOrigin="0.5,0.502" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
+                    </Button.Background>
+                </Button>
+                <Label Content="Movies" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
+                <ComboBox x:Name="comboBox" Foreground="#FF8E1A00" HorizontalAlignment="Center" Width="200" Margin="0,20,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
+                <Button x:Name="Submit" Content="Submit" Margin="60,20,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</Window>

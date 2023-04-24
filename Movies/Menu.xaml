@@ -27,10 +27,13 @@
                     <Button x:Name="Submit_2" Content="My List" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click2" BorderBrush="White"/>
                 </Border>
                 <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
-                    <Button x:Name="Submit_3" Content="Movies" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click3" BorderBrush="White" Height="32" VerticalAlignment="Bottom"/>
+                    <Button x:Name="Submit_3" Content="Genre" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click3" BorderBrush="White" Height="32" VerticalAlignment="Top" RenderTransformOrigin="0.501,0.5"/>
                 </Border>
                 <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
-                    <Button x:Name="Submit_4" Content="Actors" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click4" BorderBrush="White" Height="32" VerticalAlignment="Top"/>
+                    <Button x:Name="Submit_4" Content="Movies" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click5" BorderBrush="White" Height="32" VerticalAlignment="Bottom"/>
+                </Border>
+                <Border CornerRadius="20" Margin="53,10,58.333,20" Background="White" Height="32">
+                    <Button x:Name="Submit_5" Content="Actors" Margin="19,0,20,0" Background="White"  FontSize="18" Click="Submit_Click4" BorderBrush="White" Height="32" VerticalAlignment="Top"/>
                 </Border>
             </StackPanel>
         </Border>

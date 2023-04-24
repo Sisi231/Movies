@@ -65,7 +65,7 @@ namespace Movies
 
                     //Build our actual query 
 
-                    string query = "INSERT INTO SignUpTable([FirstName],[LastName],[Email],[Username],[Password], [RepeatPassword])values ('" + this.txtFirstName.Text + "','" + this.txtLastName.Text + "','" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                    string query = "INSERT INTO SignUpTable([FirstName],[LastName],[Email],[Username],[Password])values ('" + this.txtFirstName.Text + "','" + this.txtLastName.Text + "','" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "') ";
 
                     //Establish a sql command
 
