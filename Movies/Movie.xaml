@@ -1,0 +1,51 @@
+﻿<Window x:Class="Movies.Movie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movies"
+        mc:Ignorable="d"
+        Title="Movie" Height="500" Width="250">
+    <Grid>
+        <Border CornerRadius="20" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FFFFB9B9" />
+                        <GradientStop Offset="1" Color="#FF8E1A00" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" RenderTransformOrigin="0.5,0.502" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
+                    </Button.Background>
+                </Button>
+                <TextBox x:Name="txtTitle" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,10,0,0" Width="200" HorizontalContentAlignment="Center"/>
+                <Label Content="Type" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="12"/>
+                <TextBox x:Name="txtType" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Release year" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="12"/>
+                <TextBox x:Name="txtYear" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Age Certification" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="12"/>
+                <TextBox x:Name="txtAge" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Runtime" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="12"/>
+                <TextBox x:Name="txtTime" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Genres" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="12"/>
+                <TextBox x:Name="txtGenres" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Production Countries" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="12"/>
+                <TextBox x:Name="txtCountry" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,-3" Width="200"/>
+                <Label Content="Description" Margin="0,0,0,0" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="12"/>
+                <TextBox x:Name="txtDescription" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,-2,0,0" Width="200" Height="36"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    ScrollViewer.CanContentScroll="True">
+                </TextBox>
+                <Button x:Name="Button1" Content="Ratings" Margin="0,7,100,0" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="13" Click="Submit_Click" Width="80"/>
+                <Button x:Name="Button2" Content="Actors" Margin="100,-21,0,0" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="13" Click="Submit_Click_1" Width="80"/>
+                <Button x:Name="Button3" Content="Add to my list" Margin="0,4,0,0" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Click="Submit_Click_2" Width="90"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

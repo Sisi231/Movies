@@ -59,17 +59,15 @@ namespace Movies
             OpenMenu1.Show();
             this.Close();
         }
-        public string ChoosenGenre2;
 
         private void comboBox_SelectionChanged_2(object sender, SelectionChangedEventArgs e)
         {
-            Genre[1] = comboBox.Items[comboBox.SelectedIndex].ToString();
+            Genre[1] = comboBox1.Items[comboBox1.SelectedIndex].ToString();
         }
-        public string ChoosenGenre3;
 
         private void comboBox_SelectionChanged_3(object sender, SelectionChangedEventArgs e)
         {
-            Genre[2] = comboBox.Items[comboBox.SelectedIndex].ToString();
+            Genre[2] = comboBox2.Items[comboBox2.SelectedIndex].ToString();
         }
     }
 }

@@ -34,6 +34,9 @@ namespace Movies
         {
             SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=Movies; Integrated Security=True");
             int count = 0;
+            if (genres[0] == genres[1]) genres[1] = null;
+            if (genres[0] == genres[2]) genres[2] = null;
+            if (genres[1] == genres[2]) genres[2] = null;
             for (int i = 0; i < 3; i++)
             {
                 if (genres[i] != null) count++;
@@ -44,26 +47,21 @@ namespace Movies
                 if (genres[i] != null) genresEntered[j] = genres[i];
                 else j--;
             }
-            string stringGenres = "";
-            for (int i = 0; i < genresEntered.Length; i++)
-            {
-                stringGenres += $"{genresEntered[i]} ";
-            }
             try
             {
                 
                 if (sqlCon.State == ConnectionState.Closed) sqlCon.Open();
-                string query ="";
+                string query = "";
                 if (genresEntered.Length == 0) MessageBox.Show("Select at least one genre");
-                if (genresEntered.Length == 1) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%'";
-                if (genresEntered.Length == 2) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%' and genres like '%{genresEntered[1]}%'";
-                if (genresEntered.Length == 3) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%' and genres like '%{genresEntered[1]}%' and genres like '%{genresEntered[2]}%'";
+                if (genresEntered.Length == 1) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%' Order by title";
+                if (genresEntered.Length == 2) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%' and genres like '%{genresEntered[1]}%' Order by title";
+                if (genresEntered.Length == 3) query = $"Select title from Titles Where genres like '%{genresEntered[0]}%' and genres like '%{genresEntered[1]}%' and genres like '%{genresEntered[2]}%' Order by title";
 
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 SqlDataReader dr = sqlCmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    var SubjectName = dr.GetValue(1);
+                    var SubjectName = dr.GetValue(0);
                     comboBox.Items.Add(SubjectName);
                 }
             }
@@ -79,9 +77,10 @@ namespace Movies
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            //Movies OpenMovie = new Movies(movieChosen);
-            //OpenMovie.Show();
-            //this.Close();
+            
+            Menu OpenMenu = new Menu(Accountholder);
+            OpenMenu.Show();
+            this.Close();
         }
         public string movieChosen;
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -91,7 +90,9 @@ namespace Movies
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-
+            Movie OpenMovie = new Movie(Accountholder, movieChosen);
+            OpenMovie.Show();
+            this.Close();
         }
     }
 }

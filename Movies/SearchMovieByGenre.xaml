@@ -19,7 +19,7 @@
             </Border.Background>
 
             <StackPanel>
-                <Button x:Name="button" Margin="7,7,0,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Left" BorderBrush="White" RenderTransformOrigin="0.5,0.502" >
+                <Button x:Name="button" Margin="0,7,171.2,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Right" BorderBrush="White" RenderTransformOrigin="0.504,0.502" >
                     <Button.Background>
                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>

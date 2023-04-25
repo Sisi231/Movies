@@ -58,8 +58,17 @@
     <Compile Include="Account.xaml.cs">
       <DependentUpon>Account.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Actors.xaml.cs">
+      <DependentUpon>Actors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllActors.xaml.cs">
+      <DependentUpon>AllActors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseActor.xaml.cs">
+      <DependentUpon>ChooseActor.xaml</DependentUpon>
     </Compile>
     <Compile Include="ChooseMovie.xaml.cs">
       <DependentUpon>ChooseMovie.xaml</DependentUpon>
@@ -70,8 +79,20 @@
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Movie.xaml.cs">
+      <DependentUpon>Movie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyList.xaml.cs">
+      <DependentUpon>MyList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="OpeningWindow.xaml.cs">
       <DependentUpon>OpeningWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ratings.xaml.cs">
+      <DependentUpon>Ratings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByMovieName.xaml.cs">
+      <DependentUpon>SearchByMovieName.xaml</DependentUpon>
     </Compile>
     <Compile Include="SearchMovieByGenre.xaml.cs">
       <DependentUpon>SearchMovieByGenre.xaml</DependentUpon>
@@ -83,7 +104,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Actors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllActors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChangePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseActor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,7 +144,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Movie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OpeningWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ratings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchByMovieName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

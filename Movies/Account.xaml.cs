@@ -61,7 +61,9 @@ namespace Movies
 
         private void Submit_Click2(object sender, RoutedEventArgs e)
         {
-
+            Menu OpenMenu = new Menu(username);
+            OpenMenu.Show();
+            this.Close();
         }
 
         private void Submit_Click1(object sender, RoutedEventArgs e)

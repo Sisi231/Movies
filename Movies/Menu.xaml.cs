@@ -35,7 +35,9 @@ namespace Movies
 
         private void Submit_Click2(object sender, RoutedEventArgs e)
         {
-
+            MyList OpenMyList = new MyList(username);
+            OpenMyList.Show();
+            this.Close();
         }
 
         private void Submit_Click3(object sender, RoutedEventArgs e)
@@ -47,12 +49,16 @@ namespace Movies
 
         private void Submit_Click4(object sender, RoutedEventArgs e)
         {
-
+            ChooseActor OpenChooseActor = new ChooseActor(username);
+            OpenChooseActor.Show();
+            this.Close();
         }
 
         private void Submit_Click5(object sender, RoutedEventArgs e)
         {
-
+            SearchByMovieName OpenSearchByMovieName = new SearchByMovieName(username);
+            OpenSearchByMovieName.Show();
+            this.Close();
         }
     }
 }
