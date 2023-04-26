@@ -82,6 +82,11 @@
     <Compile Include="Movie.xaml.cs">
       <DependentUpon>Movie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MoviesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoviesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MyList.xaml.cs">
       <DependentUpon>MyList.xaml</DependentUpon>
     </Compile>
@@ -191,6 +196,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="MoviesDataSet.xsc">
+      <DependentUpon>MoviesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MoviesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MoviesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MoviesDataSet.xss">
+      <DependentUpon>MoviesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
