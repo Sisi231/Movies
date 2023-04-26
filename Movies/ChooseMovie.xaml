@@ -23,7 +23,7 @@
                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>
                 </Button>
-                <Label Content="Movies" Foreground="#FF8E1A00" FontSize="30" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,0" Width="110"/>
+                <Label Content="Movies/Shows" Foreground="#FF8E1A00" FontSize="30" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="12,10,10.2,0" Width="201"/>
                 <ComboBox x:Name="comboBox" Foreground="#FF8E1A00" HorizontalAlignment="Center" Width="200" Margin="0,20,0,0" SelectionChanged="ComboBox_SelectionChanged"/>
                 <Button x:Name="Submit" Content="Submit" Margin="60,20,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
             </StackPanel>

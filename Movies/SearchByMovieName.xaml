@@ -23,7 +23,7 @@
                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>
                 </Button>
-                <Label Content="Search a movie" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="25" HorizontalAlignment="Center" Margin="0,15,0,0" Width="179"/>
+                <Label Content="Search a &#xD;&#xA;movie/show" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="25" HorizontalAlignment="Center" Margin="22,15,22.2,0" Width="179" Height="72"/>
                 <TextBox x:Name="txtMovie" Height="23" TextWrapping="Wrap" Foreground="#FF8E1A00" Background="#FFFFE0E0" Margin="0,20,0,0" Width="200"/>
                 <Button x:Name="Submit" Content="Search" Margin="60,20,60.333,10" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="18" Click="Submit_Click"/>
             </StackPanel>

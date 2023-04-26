@@ -72,5 +72,12 @@ namespace Movies
             OpenChangePassword.Show();
             this.Close();
         }
+
+        private void Submit_Click3(object sender, RoutedEventArgs e)
+        {
+            OpeningWindow OpenOpeningWindow = new OpeningWindow();
+            OpenOpeningWindow.Show();
+            this.Close();
+        }
     }
 }

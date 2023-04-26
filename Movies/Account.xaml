@@ -23,16 +23,19 @@
                         <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
                     </Button.Background>
                 </Button>
-                <Label Content="Setting" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,5,60.2,0" Width="110"/>
+                <Label Content="Settings" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,5,60.2,0" Width="115"/>
                 <Label Content="Username" HorizontalContentAlignment="Center" Foreground="#FFFCCDCD" FontSize="12" HorizontalAlignment="Center" Margin="71,10,71.333,0" Width="85"/>
                 <TextBox x:Name="txtUsername" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,9.333,0"/>
                 <Label Content="Email" HorizontalContentAlignment="Center" Foreground="#FFFFB9B9" FontSize="12" HorizontalAlignment="Center" Margin="74,5,73.333,0" Width="85"/>
                 <TextBox x:Name="txtEmail" Background="#FFFFE0E0" Foreground="#FF8E1A00" FontSize="12" Margin="10,0,9.333,0"/>
                 <Border CornerRadius="20" Margin="0,20,0,20" Background="#FFFFE0E0" Height="32" HorizontalAlignment="Center">
-                    <Button x:Name="Submit_1" Content="Change Passowrd" Margin="19,0,20,0" Background="#FFFFE0E0"  FontSize="12" Click="Submit_Click1" BorderBrush="#FFFFE0E0" Height="32" VerticalAlignment="Top" RenderTransformOrigin="0.501,0.5"/>
+                    <Button x:Name="Submit_1" Content="Change Password" Margin="19,0,20,0" Background="#FFFFE0E0"  FontSize="12" Click="Submit_Click1" BorderBrush="#FFFFE0E0" Height="32" VerticalAlignment="Top" RenderTransformOrigin="0.501,0.5"/>
                 </Border>
                 <Border CornerRadius="20" Margin="0,0,0,20" Background="#FFFFE0E0" Height="32" HorizontalAlignment="Center">
                     <Button x:Name="Submit_2" Content="Go To Menu" Margin="19,0,20,0" Background="#FFFFE0E0"  FontSize="12" Click="Submit_Click2" BorderBrush="#FFFFE0E0" Height="32" VerticalAlignment="Top"/>
+                </Border>
+                <Border CornerRadius="20" Margin="0,0,0,20" Background="#FFFFE0E0" Height="32" HorizontalAlignment="Center">
+                    <Button x:Name="Submit_3" Content="Log Out" Margin="19,0,20,0" Background="#FFFFE0E0"  FontSize="12" Click="Submit_Click3" BorderBrush="#FFFFE0E0" Height="32" VerticalAlignment="Top"/>
                 </Border>
             </StackPanel>
         </Border>
