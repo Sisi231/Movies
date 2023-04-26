@@ -18,7 +18,7 @@
             </Border.Background>
 
             <StackPanel>
-                <Image Source="C:\Sisi\Potato.jpg" Height="45" Width="45" Margin="-160,7,0,0" RenderTransformOrigin="0.5,0.5"/>
+                <Image Source=".\Potato.jpg" Height="45" Width="45" Margin="-160,7,0,0" RenderTransformOrigin="0.5,0.5"/>
                 <Label Content="Menu" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="60,10,60.2,0" />
                 <Border CornerRadius="20" Margin="53,30,58.333,20" Background="White" Height="32">
                     <Button x:Name="Submit_1" Content="Settings" Margin="19,0,18,0" Background="White"  FontSize="18" Click="Submit_Click1" BorderBrush="White"/>

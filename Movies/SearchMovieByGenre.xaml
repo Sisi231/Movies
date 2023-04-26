@@ -21,7 +21,7 @@
             <StackPanel>
                 <Button x:Name="button" Margin="0,7,171.2,0" Width="45" Height="45" Click="button_Click" Foreground="White" HorizontalAlignment="Right" BorderBrush="White" RenderTransformOrigin="0.504,0.502" >
                     <Button.Background>
-                        <ImageBrush ImageSource="C:\Sisi\Potato.jpg"/>
+                        <ImageBrush ImageSource=".\Potato.jpg"/>
                     </Button.Background>
                 </Button>
                 <Label Content="Pick Genres" HorizontalContentAlignment="Center" Foreground="#FF8E1A00" FontSize="30" HorizontalAlignment="Center" Margin="0,15,0,0" Width="179"/>
