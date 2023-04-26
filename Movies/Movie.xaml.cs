@@ -23,6 +23,8 @@ namespace Movies
     {
         public string AccountHolder;
         public string MovieTitle;
+        public SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=Movies; Integrated Security=True");
+
         public Movie(string user, string movieTitle)
         {
             InitializeComponent();
@@ -32,7 +34,6 @@ namespace Movies
         }
         void fill()
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=Movies; Integrated Security=True");
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
@@ -57,6 +58,7 @@ namespace Movies
             {
 
                 MessageBox.Show(ex.Message);
+                this.Show();
             }
             finally
             {
@@ -86,18 +88,17 @@ namespace Movies
 
         private void Submit_Click_2(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=Movies; Integrated Security=True");
             try
             {
                 if (sqlCon.State == ConnectionState.Closed) sqlCon.Open();
-                string query = $"Select Count(*) from MyList where username = {AccountHolder} and movieName = {MovieTitle}";
+                string query = $"Select Count(*) from MyList where username = '{AccountHolder}' and movieName = '{MovieTitle}'";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 int rowCount = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (rowCount == 0)
                 {
                     string Secondquery = $"Insert Into MyList(username, movieName) values('{AccountHolder}', '{MovieTitle}')";
-                    SqlCommand sqlCmd1 = new SqlCommand(query, sqlCon);
-                    sqlCmd.ExecuteNonQuery();
+                    SqlCommand sqlCmd1 = new SqlCommand(Secondquery, sqlCon);
+                    sqlCmd1.ExecuteNonQuery();
                 }
                 else return;
             }
@@ -111,5 +112,26 @@ namespace Movies
                 sqlCon.Close();
             }
         }
+
+        private void Submit_Click_3(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                sqlCon.Open();
+                String query = "Delete from MyList Where movieName = '" + MovieTitle + "'";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully deleted");
+                sqlCon.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+
     }
 }
+

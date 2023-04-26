@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Globalization;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Movies
 {
@@ -36,9 +39,33 @@ namespace Movies
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            AllActors OpenMovie = new AllActors(AccountHolder, txtActor.Text);
-            OpenMovie.Show();
-            this.Close();
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            txtActor.Text = textInfo.ToTitleCase(txtActor.Text);
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=Movies; Integrated Security=True");
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed) sqlCon.Open();
+                string query = $"SELECT COUNT(*) FROM Credits Where name='{txtActor.Text}'";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                int rowCount = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (rowCount == 0)
+                {
+                    MessageBox.Show("No such actor!");
+                }
+                else
+                {
+                    AllActors OpenMovie = new AllActors(AccountHolder, txtActor.Text);
+                    OpenMovie.Show();
+                    this.Close();
+                }
+                sqlCon.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
